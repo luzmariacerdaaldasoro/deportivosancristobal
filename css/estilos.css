@@ -1,0 +1,375 @@
+head {
+    display: flex;
+}
+
+body {
+    background-color: chocolate;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+section {
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.flex__container{
+    display: flex;
+    background-color: #f7941d;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    padding: 1rem 
+  }
+
+.flex__abajo{
+      flex-direction: column;
+  }
+
+.flex__container__div{
+    display: inline;
+    color: white;
+    padding: 1rem;
+    background-color: grey;
+    margin: 1rem;
+    border: 1px solid grey;
+  }
+
+.section__article {
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    background-color: rgb(13, 128, 61);
+    width: 100%;
+    height: auto;
+    padding: 1rem; 
+}
+
+.tamano__logo__header{
+    width: fit-content;
+    height: fit-content;
+}
+
+.section__tarjetas{
+    display: grid;
+    width: 25% 25% 25%;
+    height: 20% 20% 20%;
+    gap: 0.5rem;
+    background-color: #f7941d;
+    flex-wrap: nowrap; 
+}
+.section__clases{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto; 
+    padding: 1rem; 
+    margin-top: 2rem;
+    background-color: #f7941d;
+    flex-wrap: wrap; 
+    list-style-type: none;
+    border-radius: 10px;
+    
+}
+
+.section__texto {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    padding-top: 2rem;
+    padding-left: 1/2rem;
+    padding-right: 1/2rem;
+    border-radius: 1rem;
+}
+
+.head__titulo {
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    height: vh;
+    width: 100%;
+    color:chocolate;
+}
+
+.header__bienvenida {
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+.header__subtitulo {
+    text-align: center;
+    color: brown;
+    font-style: italic;
+}
+
+.subtitulo__bold{
+    font-size: 30px;
+    color: gray;
+    transform: rotate(270deg);
+    text-shadow: 1px 1px black;
+    transform-origin: 150px;
+    justify-content: left;
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+.header__listas {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    list-style-type: none; 
+    font-size: 1rem;
+}
+
+.header__item {
+    color:aliceblue;
+    padding: 0.5rem;
+    display: inline;
+}
+
+.separacion{
+    margin-top: 0.25fr;
+}
+
+.nav{ 
+    order: 1;
+
+}
+
+.ul{
+
+    text-decoration: none;
+    text-align: end;
+}
+
+.destacado {
+    color: aliceblue;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.section__imagenPrincipal {
+    width: 100%;
+}
+
+.footer__redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer__imagen {
+    width: 0.1%;
+}
+
+.section__contacto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-left: 3vh;
+    padding: 1rem;
+}
+.input__tamaño{
+    align-items: flex-start;
+    width: 40vw;
+    height: 10vh;
+    border-radius: 10px;
+
+}
+.input__tamaño__grande{
+    align-items: flex-start;
+    width: 40vw;
+    height: 30vh;
+    border-radius: 10px;
+    
+}
+
+.foto__antigua{
+    display: flex;
+    flex-direction: column;
+    height: .25fr;
+    width: 20vw;
+
+}
+
+.tarjetas__clases{
+    display: flex;
+    justify-content: space-around;
+    width: 19%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 19%;
+    list-style-type: none;
+}
+
+.instalaciones__google{
+    width: 50vw;
+}
+
+.intrucciones__texto{
+    display: block;
+    width:80%;
+    text-align: justify;
+    background-color: grey;
+    padding: 10px;
+    font-style: initial;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-rows: 20vh;
+    grid-template-columns: 20vw 20vw 20vw;
+    border: 5 px solid brown;
+    justify-content: space-around;
+    gap: 0.2rem;
+    margin-top: 1.5rem;
+    
+}
+
+.grid__uno{
+    grid-row-start: 1/3;
+    margin-top: 2rem;
+    text-align: justify;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    width: fit-content;
+    
+}
+
+.grid__dos{
+    grid-column: 2/3;
+    margin-top: 2rem;
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: fit-content;
+    
+}
+.grid__tres{
+    grid-column: 3/3;
+    margin-top: 2rem;
+    text-align: justify;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    width: fit-content;
+    
+}
+@media (min-width: 541px) and (max-width: 720px){
+    
+    .header{
+        flex-direction: row;
+        width:auto;
+    }
+      
+    .header__listas{
+        /* font-size: smaller; */
+        flex-direction: column;
+    }
+
+    .header__item {
+        display: inline-block;
+    }
+    
+    .header{
+        flex-direction: row;
+        width:auto;
+    }
+    .flex__container{
+        display: flex;
+        flex-direction: column;
+        background-color: #f7941d;
+        background-size: contain;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        justify-content: center;
+        padding: 1rem 
+      }
+
+      .flex__abajo{
+        flex-direction: column;
+    }
+    .subtitulo__bold{
+        transform: rotate(0deg);
+    }
+   
+    }
+   
+
+@media (min-width: 320px) and (max-width: 540px){
+    .header{
+        flex-direction: row;
+        width:auto;
+    }
+
+    .header__listas{
+        flex-direction: column;
+    }
+    .header__item {
+        display: inline-block;
+    }
+
+    .tamano__logo__header{
+        width: fit-content;
+        height: fit-content;}
+
+     .grid__container{
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+     }
+    
+
+    .grid__uno{
+        grid-row-start:1/3;
+    }
+
+    .grid__dos{
+        grid-row-start:2/3;
+    }
+    .grid__tres{
+        grid-row-start:3/3;
+    }
+
+    .flex__container{
+        display: flex;
+        flex-direction: column;
+        background-color: #f7941d;
+        background-size: contain;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        justify-content: center;
+        padding: 1rem 
+      }
+
+      .flex__abajo{
+        flex-direction: column;
+    }
+    .subtitulo__bold{
+        transform: rotate(0deg);
+    }
+    .section__contacto {
+        margin-left: 0rem;
+        padding: 0rem;
+    }
+
+    .section__tarjetas{
+        display: grid;
+        width: 1fr 1fr 1fr;
+        height: 1fr 1fr 1fr;
+        gap: 0.5rem;
+        background-color: #f7941d;
+        flex-wrap: wrap; 
+    }
+}
