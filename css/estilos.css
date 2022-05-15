@@ -10,6 +10,7 @@ body {
 a {
     text-decoration: none;
     color:aliceblue;
+    transition: all;
 }
 
 section {
@@ -80,27 +81,22 @@ section {
 
 .section__texto {
     display: flex;
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     padding-top: 2rem;
     padding-left: 1/2rem;
-    padding-right: 1/2rem;
     border-radius: 1rem;
-}
-
-.head__titulo {
-    text-align: center;
 }
 
 .header{
     display: flex;
-    height: vh;
-    width: 100%;
+    height: 100%;
+    width: vw;
     color:chocolate;
 }
 
 .header__bienvenida {
-    text-align: center;
+    text-align:center;
     font-family: 'Lucida Sans';
 }
 
@@ -129,10 +125,12 @@ section {
     font-size: 1rem;
 }
 
+
 .header__item {
     color:aliceblue;
     padding: 0.5rem;
     display: inline;
+    
 }
 
 .separacion{
@@ -147,7 +145,7 @@ section {
 .ul{
 
     text-decoration: none;
-    text-align: end;
+    text-align:right;
 }
 
 .destacado {
@@ -159,7 +157,7 @@ section {
 }
 
 .section__imagenPrincipal {
-    width: 100%;
+    width: 100vw;
 }
 
 .footer__redes {
@@ -185,8 +183,14 @@ section {
     width: 40vw;
     height: 10vh;
     border-radius: 10px;
-
+    transition: all 2s;
 }
+
+.input:hover{
+    height: 15vh;
+    width: 45vw;
+}
+
 .input__tamaño__grande{
     align-items: flex-start;
     width: 40vw;
@@ -264,6 +268,18 @@ section {
     padding-left: 1.5rem;
     width: fit-content;
     
+}
+
+button{
+    background-color: rgb(12, 122, 12);
+    padding: 15px;
+    font-size: medium;
+    border-radius: 40 px;
+}
+
+.boton__con__transicion{
+    background-image: linear-gradient(to top,rgb(12,122,12),rgb(104, 124, 87));
+
 }
 @media (min-width: 541px) and (max-width: 720px){
     
