@@ -210,8 +210,7 @@ a:hover{
 .foto__antigua{
     display: flex;
     flex-direction: column;
-
-    height: .25fr;
+    height: 25vh;
     width: 20vw;
 
 }
