@@ -10,12 +10,13 @@ a {
   text-decoration: none;
   color: aliceblue;
   transition: all; }
-  a :hover {
-    background-color: #f7941d;
-    color: brown;
-    transform: scale(10%);
-    font-size: larger; }
 
+/*  :hover{
+        background-color: $color_tarjetas;
+        color: $color_fondo;
+        transform: scale(10%);
+        font-size: larger; 
+    } */
 .section {
   padding: 0px;
   margin-left: 0px; }
@@ -61,11 +62,10 @@ a {
   .section__imagenPrincipal {
     width: 100vw; }
 
-.flex
-__abajo {
+.flex__abajo {
   flex-direction: column; }
 
-__container {
+.flex__container {
   display: flex;
   background-color: #f7941d;
   background-size: cover;
@@ -74,16 +74,16 @@ __container {
   margin-top: 5%;
   justify-content: center;
   padding: 1rem; }
-  __container__div {
-    display: inline;
-    color: aliceblue;
-    padding: 1rem;
-    background-color: gray;
-    margin: 1rem;
-    border: 1px solid gray; }
 
-.tamano
-__logo__header {
+.flex__div {
+  display: inline;
+  color: aliceblue;
+  padding: 1rem;
+  background-color: gray;
+  margin: 1rem;
+  border: 1px solid gray; }
+
+.tamano__logo__header {
   width: fit-content;
   height: fit-content; }
 
@@ -136,33 +136,31 @@ __logo__header {
 .bold {
   font-weight: 800; }
 
-.footer
-__redes {
+.footer__redes {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-__imagen {
+.footer__imagen {
   width: 0.1%; }
 
-.input
-__tamaño {
+.input__tamaño {
   align-items: flex-start;
   width: 40vw;
   height: 10vh;
   border-radius: 10px;
   transition: all 2s; }
 
-__grande {
+.input__grande {
   align-items: flex-start;
   width: 40vw;
   height: 30vh;
   border-radius: 10px; }
 
-:hover {
-  height: 15vh;
-  width: 45vw; }
-
+/* :hover{
+        height: 15vh;
+        width: 45vw;
+    } */
 .foto__antigua {
   display: flex;
   flex-direction: column;
@@ -189,8 +187,7 @@ __grande {
   padding: 10px;
   font-style: initial; }
 
-.grid
-__container {
+.grid__container {
   display: grid;
   grid-template-rows: 20vh;
   grid-template-columns: 15vw 15vw 15vw;
@@ -198,30 +195,30 @@ __container {
   justify-content: space-around;
   gap: 0.2rem;
   margin-top: 1.5rem; }
-  .grid
-__container __uno {
-    grid-row-start: 1/3;
-    margin-top: 2rem;
-    text-align: justify;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    width: fit-content; }
-  .grid
-__container __dos {
-    grid-column: 2/3;
-    margin-top: 2rem;
-    text-align: justify;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: fit-content; }
-  .grid
-__container __tres {
-    grid-column: 3/3;
-    margin-top: 2rem;
-    text-align: justify;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    width: fit-content; }
+
+.grid__uno {
+  grid-row-start: 1/3;
+  margin-top: 2rem;
+  text-align: justify;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: fit-content; }
+
+.grid__dos {
+  grid-column: 2/3;
+  margin-top: 2rem;
+  text-align: justify;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: fit-content; }
+
+.grid__tres {
+  grid-column: 3/3;
+  margin-top: 2rem;
+  text-align: justify;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: fit-content; }
 
 button {
   background-color: #0c7a0c;
@@ -236,12 +233,11 @@ button {
   .header {
     flex-direction: column;
     width: auto; }
-  __listas {
-    flex-direction: column; }
-  __item {
-    display: inline-block; }
-  .flex
-__container {
+    .header__listas {
+      flex-direction: column; }
+    .header__item {
+      display: inline-block; }
+  .flex__container {
     display: flex;
     flex-direction: column;
     background-color: #f7941d;
@@ -251,7 +247,7 @@ __container {
     margin-top: 5%;
     justify-content: center;
     padding: 1rem; }
-  __abajo {
+  .flex__abajo {
     flex-direction: column; }
   .subtitulo__bold {
     transform: rotate(0deg); } }
@@ -260,25 +256,23 @@ __container {
   .header {
     flex-direction: column;
     width: auto; }
-  __listas {
-    flex-direction: column; }
-  __item {
-    display: inline-block; }
+    .header__listas {
+      flex-direction: column; }
+    .header__item {
+      display: inline-block; }
   .tamano__logo__header {
     width: fit-content;
     height: fit-content; }
-  .grid
-__container {
+  .grid__container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
-  __uno {
+  .grid__uno {
     grid-row-start: 1/3; }
-  __dos {
+  .grid__dos {
     grid-row-start: 2/3; }
-  __tres {
+  .grid__tres {
     grid-row-start: 3/3; }
-  .flex
-__container {
+  .flex__container {
     display: flex;
     flex-direction: column;
     background-color: #f7941d;
@@ -288,15 +282,14 @@ __container {
     margin-top: 5%;
     justify-content: center;
     padding: 1rem; }
-  __abajo {
+  .flex__abajo {
     flex-direction: column; }
   .subtitulo__bold {
     transform: rotate(0deg); }
-  .section
-__contacto {
+  .section__contacto {
     margin-left: 0rem;
     padding: 0rem; }
-  __tarjetas {
+  .section__tarjetas {
     display: grid;
     width: 1fr 1fr 1fr;
     height: 1fr 1fr 1fr;
@@ -308,36 +301,32 @@ __contacto {
   .header {
     flex-direction: column;
     width: auto; }
-  .section
-__article {
+  .section__article {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100vw; }
-  __texto {
+  .section__texto {
     flex-direction: column;
     justify-content: center; }
   .separacion {
     flex-direction: row; }
-  .header
-__listas {
+  .header__listas {
     flex-direction: column; }
-  __item {
+  .header__item {
     display: inline-block; }
   .tamano__logo__header {
     width: fit-content;
     height: fit-content; }
-  .grid
-__container {
+  .grid__container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
-  __uno {
+  .grid__uno {
     grid-row-start: 1/3; }
-  __dos {
+  .grid__dos {
     grid-row-start: 2/3; }
-  __tres {
+  .grid__tres {
     grid-row-start: 3/3; }
-  .flex
-__container {
+  .flex__container {
     display: flex;
     flex-direction: column;
     background-color: #f7941d;
@@ -347,15 +336,14 @@ __container {
     margin-top: 5%;
     justify-content: center;
     padding: 1rem; }
-  __abajo {
+  .flex__abajo {
     flex-direction: column; }
   .subtitulo__bold {
     transform: rotate(0deg); }
-  .section
-__contacto {
+  .section__contacto {
     margin-left: 0rem;
     padding: 0rem; }
-  __tarjetas {
+  .section__tarjetas {
     display: grid;
     width: 1fr 1fr 1fr;
     height: 1fr 1fr 1fr;
