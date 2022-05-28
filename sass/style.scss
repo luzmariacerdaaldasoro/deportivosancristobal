@@ -33,7 +33,7 @@ a {
     &__article {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         background-color: $segundo_color;
         width: 100vw;
         height: auto;
@@ -78,20 +78,20 @@ a {
         width: 60vw;
         margin-left: 3vh;
         padding: 1rem;
-    }
+        align-items: center;
+        justify-content: center;
 
     &__imagenPrincipal {
         width: 100vw;
     }
 }
 
-.flex {
-    &__abajo {
+.flex__abajo {
         flex-direction: column;
     }
 
 
-    &__container {
+.flex__container {
         display: flex;
         background-color: $color_tarjetas;
         background-size: cover;
@@ -102,7 +102,7 @@ a {
         padding: 1rem;
     }
 
-    &__div {
+.flex__container__div {
         display: inline;
         color: $color_texto;
         padding: 1rem;
@@ -110,19 +110,14 @@ a {
         margin: 1rem;
         border: 1px solid $color_instrucciones;
     }
+    
 }
 
 
-
-.tamano {
-    &__logo__header {
+.tamano__logo__header {
         width: fit-content;
         height: fit-content;
-
-
     }
-}
-
 
 .header {
     display: flex;
@@ -132,10 +127,9 @@ a {
 
     &__bienvenida {
         text-align: center;
-        font-family: 'Lucida Sans';
-    }
-
-    &__subtitulo {
+        font-family: 'Lucida Sans';}
+        
+.header__subtitulo {
         text-align: center;
         color: $color_fondo;
         font-style: italic;
@@ -192,17 +186,15 @@ a {
     font-weight: 800;
 }
 
-.footer {
-    &__redes {
+.footer __redes {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    &__imagen {
+.footer__imagen {
         width: 0.1%;
     }
-}
 
 
 .input {
@@ -214,7 +206,7 @@ a {
         transition: all 2s;
     }
 
-    &__grande {
+    &__tamaño__grande {
         align-items: flex-start;
         width: 40vw;
         height: 30vh;
@@ -529,4 +521,4 @@ button {
             flex-wrap: wrap;
         }
     }
-}
+}   

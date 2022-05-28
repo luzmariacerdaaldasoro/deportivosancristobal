@@ -23,7 +23,7 @@ a {
   .section__article {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #0d803d;
     width: 100vw;
     height: auto;
@@ -58,30 +58,29 @@ a {
     flex-wrap: wrap;
     width: 60vw;
     margin-left: 3vh;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center; }
+    .section__contacto__imagenPrincipal {
+      width: 100vw; }
+  .section .flex__abajo {
+    flex-direction: column; }
+  .section .flex__container {
+    display: flex;
+    background-color: #f7941d;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    justify-content: center;
     padding: 1rem; }
-  .section__imagenPrincipal {
-    width: 100vw; }
-
-.flex__abajo {
-  flex-direction: column; }
-
-.flex__container {
-  display: flex;
-  background-color: #f7941d;
-  background-size: cover;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  justify-content: center;
-  padding: 1rem; }
-
-.flex__div {
-  display: inline;
-  color: aliceblue;
-  padding: 1rem;
-  background-color: gray;
-  margin: 1rem;
-  border: 1px solid gray; }
+  .section .flex__container__div {
+    display: inline;
+    color: aliceblue;
+    padding: 1rem;
+    background-color: gray;
+    margin: 1rem;
+    border: 1px solid gray; }
 
 .tamano__logo__header {
   width: fit-content;
@@ -95,7 +94,7 @@ a {
   .header__bienvenida {
     text-align: center;
     font-family: 'Lucida Sans'; }
-  .header__subtitulo {
+  .header .header__subtitulo {
     text-align: center;
     color: brown;
     font-style: italic; }
@@ -136,7 +135,7 @@ a {
 .bold {
   font-weight: 800; }
 
-.footer__redes {
+.footer __redes {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -151,7 +150,7 @@ a {
   border-radius: 10px;
   transition: all 2s; }
 
-.input__grande {
+.input__tamaño__grande {
   align-items: flex-start;
   width: 40vw;
   height: 30vh;
