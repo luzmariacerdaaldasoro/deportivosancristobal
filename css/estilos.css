@@ -22,8 +22,9 @@ a {
   margin-left: 0px; }
   .section__article {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
     background-color: #0d803d;
     width: 100vw;
     height: auto;
@@ -48,11 +49,12 @@ a {
     border-radius: 10px; }
   .section____texto {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
     padding-top: 2rem;
     padding-left: 1/2rem;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    align-items: flex-start; }
   .section__contacto {
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +84,10 @@ a {
     margin: 1rem;
     border: 1px solid gray; }
 
+.img-fluid {
+  width: 20%;
+  height: auto; }
+
 .tamano__logo__header {
   width: fit-content;
   height: fit-content; }
@@ -99,7 +105,6 @@ a {
     color: brown;
     font-style: italic; }
   .header__listas {
-    display: flex;
     justify-content: flex-end;
     float: right;
     list-style-type: none;

@@ -8,7 +8,7 @@ head {
 }
 
 body {
-    background-color: $color_principal;
+    background-color:$color_principal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -32,8 +32,9 @@ a {
 
     &__article {
         display: flex;
-        flex-direction: column;
-        /* flex-wrap: wrap; */
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
         background-color: $segundo_color;
         width: 100vw;
         height: auto;
@@ -65,11 +66,12 @@ a {
 
     &____texto {
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: 10%;
+        height: 10%;
         padding-top: 2rem;
         padding-left: 1/2rem;
         border-radius: 1rem;
+        align-items: flex-start;
     }
 
     &__contacto {
@@ -109,8 +111,12 @@ a {
         background-color: $color_instrucciones;
         margin: 1rem;
         border: 1px solid $color_instrucciones;
-    }
-    
+    }   
+}
+
+.img-fluid{
+    width: 20%;
+    height: auto;
 }
 
 
@@ -136,7 +142,6 @@ a {
     }
 
     &__listas {
-        display: flex;
         justify-content: flex-end;
         float: right;
         list-style-type: none;
