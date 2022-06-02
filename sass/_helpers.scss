@@ -1,0 +1,18 @@
+/* MAP */
+$clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde, key4:clase-salsa);
+
+/* EACH */
+@each $key, $clase in $clases {
+    .#{$key}-card{
+        background-image: url('../recursos/#{$clase}.jpg');
+        background-size: cover;
+        width: $ancho*1.4;
+        height: $alto*2;
+        justify-content: flex-start;
+        background-color: $color_tarjetas;
+        border-radius: 2rem;
+    }
+
+    
+}
+
