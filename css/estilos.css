@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* COLORES */
 /* TAMAÑOS */
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
@@ -167,8 +168,8 @@ head {
   display: flex; }
 
 body {
-  background-color: chocolate;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: chocolate; }
 
 a {
   text-decoration: none;
@@ -187,7 +188,7 @@ a {
   .section__article {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: baseline;
     background-color: #0d803d;
     width: 100vw;
@@ -217,7 +218,7 @@ a {
     padding-top: 2rem;
     padding-left: 1/2rem;
     border-radius: 1rem;
-    align-items: flex-start; }
+    align-items: flex-end; }
   .section__contacto {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +227,8 @@ a {
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    grid-template-rows: 1rem; }
+    grid-template-rows: 1rem;
+    background-color: #f7941d; }
     .section__contacto__imagenPrincipal {
       width: 100vw; }
   .section .flex__abajo {
@@ -267,7 +269,7 @@ a {
   .header__bienvenida {
     text-align: center;
     font-family: 'Lucida Sans'; }
-  .header .header__subtitulo {
+  .header__subtitulo {
     text-align: center;
     color: brown;
     font-style: italic; }
@@ -320,7 +322,7 @@ a {
   width: 40vw;
   height: 10vh;
   border-radius: 10px;
-  transition: all 2s; }
+  /*  transition: all 2s; */ }
 
 .input__tamaño__grande {
   align-items: flex-start;

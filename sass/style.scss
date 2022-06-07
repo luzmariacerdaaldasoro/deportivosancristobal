@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'sasscript';
 @import 'header';
-@import 'sasscript';
 @import 'footer';
 @import 'mediaqueries';
 @import 'helpers';
@@ -12,8 +11,8 @@ head {
 }
 
 body {
-    background-color:$color_principal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: $color_principal;
 }
 
 a {
@@ -37,7 +36,7 @@ a {
     &__article {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: baseline;
         background-color: $segundo_color;
         width: 100vw;
@@ -74,7 +73,7 @@ a {
         padding-top: 2rem;
         padding-left: 1/2rem;
         border-radius: 1rem;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     &__contacto {
@@ -86,6 +85,7 @@ a {
         align-items: center;
         justify-content: center;
         grid-template-rows: 1rem;
+        background-color: $color_tarjetas;
 
     &__imagenPrincipal {
         width: 100vw;
@@ -140,9 +140,10 @@ a {
 
     &__bienvenida {
         text-align: center;
-        font-family: 'Lucida Sans';}
+        font-family: 'Lucida Sans';
+    }
         
-.header__subtitulo {
+    &__subtitulo {
         text-align: center;
         color: $color_fondo;
         font-style: italic;
@@ -215,7 +216,7 @@ a {
         width: 40vw;
         height: 10vh;
         border-radius: 10px;
-        transition: all 2s;
+       /*  transition: all 2s; */
     }
 
     &__tamaño__grande {
