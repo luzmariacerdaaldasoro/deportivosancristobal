@@ -223,10 +223,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 60vw;
-    margin-left: 3vh;
-    padding: 1rem;
+    /*      margin-left: 40vh;
+        padding: 1rem; */
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     grid-template-rows: 1rem;
     background-color: #f7941d; }
     .section__contacto__imagenPrincipal {
@@ -243,12 +243,13 @@ a {
     justify-content: center;
     padding: 1rem; }
   .section .flex__container__div {
-    display: inline;
-    color: aliceblue;
+    display: block;
+    color: brown;
     padding: 1rem;
     background-color: gray;
     margin: 1rem;
-    border: 1px solid gray; }
+    padding: 10 rem;
+    /*  border: 1px solid $color_instrucciones; */ }
 
 .img-fluid {
   width: 20%;
@@ -259,7 +260,8 @@ a {
 
 .tamano__logo__header {
   width: fit-content;
-  height: fit-content; }
+  height: fit-content;
+  background-color: #f7941d; }
 
 .header {
   display: flex;
@@ -289,12 +291,16 @@ a {
   /*     transform: rotate(270deg); */
   transform-origin: 10px;
   text-shadow: 1px 1px black;
-  justify-content: left;
-  padding-top: 60px;
-  padding-right: 10px; }
+  justify-content: right;
+  padding-top: 5rem;
+  padding-left: 30rem; }
 
 .separacion {
   margin-top: 0.25fr; }
+  .separacion__texto {
+    justify-content: center;
+    align-content: center;
+    size-adjust: 30%; }
 
 .nav {
   order: 1; }
@@ -337,8 +343,8 @@ a {
 .foto__antigua {
   display: flex;
   flex-direction: column;
-  height: 25vh;
-  width: 20vw; }
+  height: 10rem;
+  width: 20rem; }
 
 .tarjetas__clases {
   display: flex;
@@ -350,7 +356,7 @@ a {
   list-style-type: none; }
 
 .instalaciones__google {
-  width: 50vw; }
+  /* width: 50vw; */ }
 
 .intrucciones__texto {
   display: block;
