@@ -6,13 +6,10 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
     .#{$key}-card{
         background-image: url('../recursos/#{$clase}.jpg');
         background-size: cover;
-        width: $ancho*1.4;
-        height: $alto*2;
-        justify-content: flex-start;
+        width: $ancho*1.5;
+        height: $alto*2.5;
         background-color: $color_tarjetas;
         border-radius: 2rem;
+        margin-left: 1 rem;
     }
-
-    
 }
-
