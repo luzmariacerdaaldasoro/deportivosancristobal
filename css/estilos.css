@@ -67,41 +67,44 @@
   .key1-card {
     background-image: url("../recursos/clase-natacion.jpg");
     background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: clase-natacion;
     background-color: #f7941d;
     border-radius: 1rem; }
   .key2-card {
     background-image: url("../recursos/clase-taekwondo.jpg");
     background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: clase-taekwondo;
     background-color: #f7941d;
     border-radius: 1rem; }
   .key3-card {
     background-image: url("../recursos/clase-spinning-tarde.jpg");
     background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: clase-spinning-tarde;
     background-color: #f7941d;
     border-radius: 1rem; }
   .key4-card {
     background-image: url("../recursos/clase-salsa.jpg");
     background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: clase-salsa;
     background-color: #f7941d;
     border-radius: 1rem; }
   .section__clases {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     height: auto;
+    width: max-content;
     margin-top: 2rem;
     background-color: #f7941d;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style-type: none;
     border-radius: 10px; } }
 
@@ -117,15 +120,17 @@
   .tamano__logo__header {
     width: fit-content;
     height: fit-content; }
-  .grid__container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-  .grid__uno {
-    grid-row-start: 1/3; }
-  .grid__dos {
-    grid-row-start: 2/3; }
-  .grid__tres {
-    grid-row-start: 3/3; }
+  .grid {
+    /*         &__container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        } */ }
+    .grid__uno {
+      grid-row-start: 1/3; }
+    .grid__dos {
+      grid-row-start: 2/3; }
+    .grid__tres {
+      grid-row-start: 3/3; }
   .flex__container {
     display: flex;
     flex-direction: column;
@@ -149,7 +154,10 @@
     height: 1fr 1fr 1fr;
     gap: 0.5rem;
     background-color: #f7941d;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .section__clases {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
 
 /* MINI */
 @media (min-width: 1px) and (max-width: 360px) {
@@ -163,6 +171,9 @@
   .section__texto {
     flex-direction: column;
     justify-content: center; }
+  .section__clases {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
   .separacion {
     flex-direction: row; }
   .header__listas {
@@ -204,7 +215,10 @@
     height: 1fr 1fr 1fr;
     gap: 0.5rem;
     background-color: #f7941d;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .section__clases {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
 
 head {
   display: flex; }
@@ -271,8 +285,9 @@ a {
     flex-direction: column; }
   .section .flex__container {
     display: flex;
+    flex-direction: column;
     background-color: #f7941d;
-    background-size: cover;
+    background-size: contain;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
@@ -342,7 +357,8 @@ a {
 
 .ul {
   text-decoration: none;
-  text-align: right; }
+  text-align: right;
+  flex-wrap: wrap; }
 
 .destacado {
   color: aliceblue; }

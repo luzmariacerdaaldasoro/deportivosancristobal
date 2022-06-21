@@ -46,7 +46,7 @@ a {
     }
 
     &__clases {
-        display: grid;
+        display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         height: auto;
@@ -91,8 +91,9 @@ a {
 
 .flex__container {
         display: flex;
+        flex-direction: column;
         background-color: $color_tarjetas;
-        background-size: cover;
+        background-size: contain;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 5%;
@@ -189,6 +190,7 @@ a {
 
     text-decoration: none;
     text-align: right;
+    flex-wrap: wrap;
 }
 
 .destacado {

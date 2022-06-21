@@ -44,19 +44,22 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
     .#{$key}-card{
         background-image: url('../recursos/#{$clase}.jpg');
         background-size: cover;
-        width: $ancho*1;
-        height: $alto*2;
-        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        flex-wrap: $clase;
         background-color: $color_tarjetas;
         border-radius: 1rem;
     } 
 }
 .section__clases{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     height: auto;
+    width:max-content;
     margin-top: 2rem;
     background-color: $color_tarjetas;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style-type: none;
     border-radius: 10px;
 }
@@ -84,10 +87,10 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
     }
 
     .grid {
-        &__container {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
+/*         &__container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        } */
 
         &__uno {
             grid-row-start: 1/3;
@@ -138,6 +141,11 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
             background-color: #f7941d;
             flex-wrap: wrap;
         }
+
+        &__clases {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
     }
 }
 
@@ -162,6 +170,11 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
         &__texto {
             flex-direction: column;
             justify-content: center;
+        }
+
+        &__clases {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
     }
 
@@ -238,6 +251,10 @@ $clases: (key1: clase-natacion, key2:clase-taekwondo, key3:clase-spinning-tarde,
             gap: 0.5rem;
             background-color: #f7941d;
             flex-wrap: wrap;
+        }
+        &__clases {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
     }
 }   
